@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,122 +9,177 @@
     <link rel="stylesheet" href="public/css/layout.css">
     <link rel="stylesheet" href="public/css/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <img src="public/images/social placeholders.jpg" alt="Logo">
-        <nav class="header__nav">
-            <ul class="header__nav--items">
-                <li class="header header__nav--item"><a href=#Contact>Contact</a></li>
-                <li class="header header__nav--item"><a href=#Portfolio>Portfolio</a></li>
-                <li class="header header__nav--item"><a href=#About>About</a></li>
+    <header class="main-header">
+        <img class="Logo" src="public/images/social placeholders.jpg" alt="Logo">
+        <nav class="header__nav--margin-right">
+            <ul class="header__nav-list">
+                <li class="header__nav-list--item"><a href=#portfolio>Portfolio</a></li>
+                <li class="header__nav-list--item"><a href=#about>About</a></li>
+                <li class="header__nav-list--item"><a href=#contact>Contact</a></li>
+                <li class="header__nav-list--item"><a href=#blog>Blog</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <section>
-            <h1>Jessica Wright</h1>
-            <img src="public/images/image placeholder.jpg" alt="My picture">
-        </section>
-        <section class="Portfolio">
-            <h2>Portfolio</h2>
-            <article>
-                <figure>
-                    <img src="public/images/image placeholder.jpg" alt="hospital">
-                    <figcaption>
-                        <p>Nightmare Hospital</p>
-                        <p>Java/OOP/TDD</p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="public/images/image placeholder.jpg" alt="thumbnail image of portfolio">
-                    <figcaption>
-                        <p>Portfolio Creation</p>
-                        <p>HTML/CSS/JavaScript</p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="public/images/image placeholder.jpg" alt="tamagotchi">
-                    <figcaption>
-                        <p>Virtual Pet</p>
-                        <p>Java/OOP/TDD</p>
-                    </figcaption>
-                </figure>
-            </article>
-        </section>
-        <section class="About">
-            <h2>About</h2>
-            <figure>
-                <img src="public/images/image placeholder.jpg" alt="different picture">
-                <figcaption>
-                    <p>Hi there!</p>
-                </figcaption>
-            </figure>
-            <section class="about-text">
-                <p>Full stack developer with a passion for fostering lasting relationships between users and companies. Proven ability to manage multiple, complex projects in a team environment. Mission-driven developer looking to challenge the status-quo while building impactful products with a cool team.</p>
+    <main>
+        <div class="hero-image__header">
+            <h1 class="hero-image__header--name">JESSICA WRIGHT</h1>
+            <section class="hero-image__header--intro">
+                <p>I'm a Columbus based full-stack developer focused on </br>building customer loyalty & user-friendly
+                    experiences.</p>
             </section>
-            <section class="resume">
-                <img src="public/documents/Jess - resume draft.pdf" alt="resume">
-            </section>
-            <section class="tech-stack">
-                <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile • SQL • Relational Databases • Source Control / Git</p>
-            </section>
-        </section>
-        <section class="Contact">
-            <h2>Contact Me</h2>
-            <figure>
-                <img src="public/images/social placeholders.jpg" alt="different picture">
-                <figcaption> <p>GitHub</p> </figcaption>
-            </figure>
-            <figure>
-                <img src="public/images/social placeholders.jpg" alt="different picture">
-                <figcaption> <p>LinkedIn</p> </figcaption>
-            </figure>
-            <figure>
-                <img src="public/images/social placeholders.jpg" alt="different picture">
-                <figcaption> <p>Email</p> </figcaption>
-            </figure>
-            <figure>
-                <img src="public/images/social placeholders.jpg" alt="different picture">
-                <figcaption> <p>Twitter</p> </figcaption>
-            </figure>
-        </section>
-        <section class="Blog">
-            <h2>Blog</h2>
-            <article>
-                <figure>
-                    <img src="public/images/social placeholders.jpg" alt="different picture">
-                    <h3>Codenewbie Podcast</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis soluta, optio voluptatum adipisci, earum ullam similique deleniti officia totam ab non accusamus repudiandae delectus odio odit obcaecati quo culpa!</p>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="public/images/social placeholders.jpg" alt="different picture">
-                    <h3>Going to your first tech meetup</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo sunt dignissimos, totam inventore eveniet nobis ab dolor minima nam? Deserunt neque doloremque vero perferendis adipisci sint hic. Sit, aut!</p>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="public/images/social placeholders.jpg" alt="different picture">
-                    <h3>Where to get CSS news</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur nesciunt explicabo illum at velit est a nihil fugiat reprehenderit laborum aut aliquam, voluptatibus magnam temporibus porro maxime architecto quisquam.</p>
-                </figure>
-            </article>
-        </section>
-    </div><!-- ./container -->
-        <footer>
-            <p>© 2019<a href="mailto:wright.983@gmail.com">Jessica Wright</a> Made in the USA</p>
-            <div class="social-links">
-                <ul>
-                    <li><a href="https://twitter.com/Jessicaburnettw">Follow me on Twitter</a></li>
-                    <li><a href="http://github.com/jessicawright">Follow me on GitHub</a></li>
-                </ul>
-            </div>      
-        </footer>
+        </div>
+        <div class="hero-image__portfolio">
+            <div class="container">
+                <section class="portfolio">
+                    <div class="portfolio__title">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <div class="portfolio__content">
+                        <article class="portfolio__examples">
+                            <figure>
+                                <img src="public/images/image placeholder.jpg" alt="hospital">
+                                <figcaption class="portfolio__examples--caption">
+                                    <p>Nightmare Hospital<br />Java/OOP/TDD</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article class="portfolio__examples">
+                            <figure>
+                                <img src="public/images/image placeholder.jpg" alt="thumbnail image of portfolio">
+                                <figcaption class="portfolio__examples--caption">
+                                    <p>Portfolio Creation<br />HTML/CSS/JavaScript</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article class="portfolio__examples">
+                            <figure>
+                                <img src="public/images/image placeholder.jpg" alt="tamagotchi">
+                                <figcaption class="portfolio__examples--caption">
+                                    <p>Virtual Pet<br />Java/OOP/TDD</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="hero-image__about">
+            <div class="container">
+                <section class="about">
+                    <div class="about__title">
+                        <h2>About</h2>
+                    </div>
+                    <div class="about__content">
+                        <section class="about__content-text">
+                            <p>Full stack developer with a passion for fostering lasting relationships between users and
+                                companies. Proven ability to manage multiple, complex projects in a team environment.
+                                Mission-driven developer looking to challenge the status-quo while building impactful
+                                products with a cool team.</p>
+                        </section>
+                        <section class="about__content-tech-stack">
+                            <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD
+                                • Agile (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive
+                                Design / Mobile • SQL • Relational Databases • Source Control / Git</p>
+                        </section>
+                        <section class="about__content-resume">
+                            <a
+                                href="https://docs.google.com/document/d/1g_hfcbLl4KkJS_bpYgbUVWbYMCBrYdDr36uS6zZ9J7c/edit?usp=sharing">My
+                                Resume</a>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="hero-image__contact">
+            <div class="container">
+                <section class="contact">
+                    <div class="contact__title">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <div class="contact__content">
+                        <figure>
+                            <img src="public/images/GitHub-Mark-32px.png" alt="different picture">
+                            <figcaption>
+                                <p>GitHub</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="public/images/In-Black-28px-TM.png" alt="different picture">
+                            <figcaption>
+                                <p>LinkedIn</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="public/images/logo_gmail_32px.png" alt="different picture">
+                            <figcaption>
+                                <p>Email</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="public/images/Twitter_Logo_Blue.png" alt="different picture">
+                            <figcaption>
+                                <p>Twitter</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="hero-image__blog">
+            <div class="container">
+                <section class="blog">
+                    <div class="blog__title">
+                        <h2>Blog</h2>
+                    </div>
+                    <div class="blog__content">
+                        <article>
+                            <figure>
+                                <img src="public/images/social placeholders.jpg" alt="different picture">
+                                <h3>Codenewbie Podcast</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis soluta,
+                                    optio
+                                    voluptatum adipisci, earum ullam similique deleniti officia totam ab non accusamus
+                                    repudiandae delectus odio odit obcaecati quo culpa!</p>
+                            </figure>
+                        </article>
+                        <article>
+                            <figure>
+                                <img src="public/images/social placeholders.jpg" alt="different picture">
+                                <h3>Going to your first tech meetup</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo sunt
+                                    dignissimos, totam
+                                    inventore eveniet nobis ab dolor minima nam? Deserunt neque doloremque vero
+                                    perferendis
+                                    adipisci sint hic. Sit, aut!</p>
+                            </figure>
+                        </article>
+                        <article>
+                            <figure>
+                                <img src="public/images/social placeholders.jpg" alt="different picture">
+                                <h3>Where to get CSS news</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur
+                                    nesciunt
+                                    explicabo illum at velit est a nihil fugiat reprehenderit laborum aut aliquam,
+                                    voluptatibus
+                                    magnam temporibus porro maxime architecto quisquam.</p>
+                            </figure>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2019<a href="mailto:wright.983@gmail.com">Jessica Wright</a> Made in the USA</p>
+        <div class="social-links">
+            <ul>
+                <li><a href="https://twitter.com/Jessicaburnettw">Follow me on Twitter</a></li>
+                <li><a href="http://github.com/jessicawright">Follow me on GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
