@@ -130,7 +130,7 @@
     height: 5rem;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     top: 0px;
     z-index: 15;
@@ -147,6 +147,8 @@
 .header__nav {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    right: 3rem;
 }
 
 #portfolio {
