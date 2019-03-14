@@ -4,332 +4,109 @@
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-#about {
-    background-image: url('../images/portfolio\ collage.png');
-    background-repeat: repeat;
-    background-position-y: 2rem;
-    background-position-x: -2rem;
-    text-align: center; 
-    width: 100%;
-    height: 130vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-#about:after {
-    content: "";
-    display: flex;
-    position: absolute; 
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-    background-color: rgba(28, 0, 28, 0.8);
-}
-
-.about__content {
-    position: relative;
-    z-index: 20;
-}
-
-.about__content--tools {
-    margin-top: 2rem;
-    z-index: 20;
-}
-
-.b-image {
-    width: 100%;
-    height: 100%;
-}
-
-#blog {
-    background-color: azure;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 130vh;
-}
-
-.blog__content {
+.about {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2rem;
-    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    margin: auto;
 }
 
-#blog-post {
-    font-size: 12.5px;
-    color: #3b3838;
-    margin-top: 2rem;
-    word-wrap: normal;
+.about__left {
+    grid-column-start: 1 /span 1;
+    border-style: solid;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #0d1d35;
 }
 
-.call-to-action {
-    margin-bottom: 2rem;
+.about__right {
+    grid-column-start: 2 /span 1;
+    border-style: solid;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #0d1d35;
+    max-height: 500px;
+    max-width: 500px;
 }
-/* 
+
 .carousel {
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
-
-.carousel__div {
-    align-self: center;
-    margin-top: 5rem;
-    position: relative;
-}
-
-.carousel__image {
-    flex-shrink: 0;
-    width: 200px;
-    height: 200px;
-}
-
-.carousel__next {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    cursor: pointer;
-}
-
-.carousel__next:hover {
-    background-color: lightgray;
-}
-
-.carousel__prev {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    cursor: pointer;
-}
-
-.carousel__prev:hover {
-    background-color: lightgray;
-} */
-
-#contact {
-    background-color: darkcyan;
+    max-width: 600px;
+    max-height: 200px;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 6rem;
 }
 
 .container {
-    margin: auto 7rem;
-    text-align: center;
-    position: absolute;
+    width: 100%;
+    background-color: wheat;
 }
 
-.container__blog-image {
-    margin: auto auto;
-    height: 150px;
-    width: 225px;
-    overflow: hidden;
-    border-style: solid;
-    border-width: 2px;
-}
-
-.container__portfolio-image {
-    margin: auto auto;
-    height: 200px;
-    width: 200px;
-    overflow: hidden;
-    border-style: solid;
-    border-width: 2px;
-}
-
-.contact__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.contact__links--item {
-    list-style: none;
-    margin-right: 2rem;
-}
-
-.contact__links--item:last-of-type {
-    margin: 0;
-}
-
-#dark-text {
-    color: #3b3838;
-}
-/* 
-.dot {
+.forward {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    /* transition: background-color 0.6s ease; */
-/* } */
-
-/* .active, .dot:hover {
-    background-color: #717171;
-  }
-
-.fas {
-    color: #3b3b3b;
-} */
-
-#footer__text {
-    font-size: 12.5px;
-    color: #3b3838;
-    margin-top: .2rem;
-    word-wrap: normal;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2.2rem;
-    color: azure;
-    letter-spacing: 3px;
-    line-height: 2rem;
-    margin-top: 3rem;
-}
-
-.header {
-    background-image: url('../images/david-wirzba-1346150-unsplash.jpg');
-    background-position-y: -11rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 110vh;
-    align-content: center;
-    justify-content: center;
-    position: relative;
-}
-
-.header__about {
-    margin-top: 4rem;
-}
-
-.header:after {
-    content: "";
-    display: flex;
-    position: absolute; 
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-    background-color: rgba(173, 9, 9, 0.55);
-}
-
-.header__bar {
-    display: flex;
-    flex-direction: row;
-    height: 4rem;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    top: 0px;
-    z-index: 15;
-}
-
-.header_contact {
-    margin-top: 3rem;
-    color: azure;
-}
-
-.header__main-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    z-index: 15;
-    margin-top: -15rem;
-    position: relative;
-}
-
-.header__main-content--name {
-    font-size: 3rem;
-    color: azure;
-    letter-spacing: 2.5px;
-    margin-top: 20rem;
-}
-
-.header__nav {
-    display: flex;
-    flex-direction: row;
     position: absolute;
-    right: 3rem;
-}
-
-.header__nav--item {
-    list-style: none;
-    margin-right: 2rem;
+    top: 25%;
+    width: auto;
+    padding: 16px;
+    color: white;
     font-weight: bold;
-}
-
-.header__nav--item:hover {
-    border-bottom: 3px solid azure;
-}
-
-.header__portfolio {
-    margin-top: 3rem;
-    color: #3b3838;
+    font-size: 20px;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
+    right: 0;
 }
 
 html {
-    font: 20px sans-serif;
-    line-height: 1.63rem;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.mail-button {
-    margin-top: 2rem;
-    padding: .5rem .5rem;
-    border-style: solid;
-    border-width: 2px;
+li {
+    list-style: none;
 }
 
-p {
-    font-size: 1rem;
-    color: azure;
-    margin-top: 3rem;
-    word-wrap: normal;
-}
-
-.p-image {
-    width: 100%;
-    height: 100%;
-}
-
-#plane {
+.main {
+    background-color: #0d1d35;
+    margin-top: 1.5rem;
     margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    position: relative;
 }
 
-#portfolio {
-    background-color: azure;
+.main__center {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 130vh;
+    align-content: center;
+    justify-items: center;
 }
 
-.portfolio__content {
+.main__center--name {
+    align-self: center;
+    margin: 5rem auto;
+}
+
+.nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 4rem;
+    justify-content: space-between;
 }
 
-.techstack {
-    font-size: 16px;
+.previous {
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    width: auto;
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    left: 0;
 }
 
-.tool-tags {
-    font-size: 13px;
-    font-style: italic;
+.profilepic {
+    width: 100%;
 }
