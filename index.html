@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        
-    </head>
 
-    <body class="container">
+</head>
+
+<body class="container">
     <header class="main">
         <nav>
             <ul class="nav">
@@ -32,85 +32,87 @@
                 <img src="./public/images/carousel placeholder.jpg" class="carousel__image" style="width:100%">
                 <img src="./public/images/carousel placeholder blue.jpg" class="carousel__image" style="width:100%">
                 <img src="./public/images/carousel placeholder black.jpg" class="carousel__image" style="width:100%">
-                
-                
+
+
                 <!-- Next and previous buttons -->
                 <a class="previous" onclick="currentImg(-1)">
-                        -</a> <a class="forward" onclick="currentImg(1)">+
-                            </a>
-                        </div>
-                    </div>
-                </header>
-                
-                <div class="about">
-                    <section class="about__left">
-                        <h2>Hello! I am Jessica Wright. I.... I am passionate...Hello! I am Jessica Wright. I.... I am passionate...
-                        </h2>
-                        <button id="modal__tech--button" class="modal__tech--button">TECH STACK</button>
-                        
-                        <!-- Modal content -->
-                        <div id="modal__tech" class="modal__tech">
-                            <span id="modal__tech--close">X</span>
-                            <p class="modal__tech--content">Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile
-                                (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile • SQL •
-                                Relational Databases • Source Control / Git</p>
-                            </div>
-                        </section>
-                        
-                        <figure class="about__right">
-                            <img src="./public/images/profile pic for editing.jpg" class="profilepic" alt="Me">
-                        </figure>
-                    </div>
-                    
-                    <section>
-                        <h2>Recent Work</h2>
-                        <article>
-                            <figure>
-                                <a href="https://github.com/rewkie/hospital-nightmare"> <img
-                                    src="./public/images/Hospital Nightmare.PNG" alt="hospital"></a>
-                                    
-                                    <!-- Modal content -->
-                                    <div>
-                                        <span>X</span>
-                                        <p>Nightmare Hospital</p>
-                                        <p>Java/OOP/TDD</p>
-                    <a href="https://github.com/rewkie/hospital-nightmare">See more on GitHub!</a>
-                </div>
-            </figure>
-        </article>
-        <article>
-            <figure>
-                
-                <a href="https://github.com/jessicawright/jessicawright.github.io"> <img
-                        src="./public/images/Portfolio code.PNG" alt="portfolio">
-                    </a>
-                    
+                    -</a> <a class="forward" onclick="currentImg(1)">+
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="about">
+        <section class="about__left">
+            <h2>Hello! I am Jessica Wright. I.... I am passionate...Hello! I am Jessica Wright. I.... I am passionate...
+            </h2>
+            <button id="modal__tech--button" class="modal__tech--button">TECH STACK</button>
+
+            <!-- Modal content -->
+            <div id="modal__tech" class="modal__tech">
+                <span id="modal__tech--close">X</span>
+                <p class="modal__tech--content">Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 •
+                    Flexbox • Grid • TDD • Agile
+                    (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
+                    SQL •
+                    Relational Databases • Source Control / Git</p>
+            </div>
+        </section>
+
+        <figure class="about__right">
+            <img src="./public/images/profile pic for editing cropped.jpg" class="profilepic" alt="Me">
+        </figure>
+    </div>
+
+    <section class="portfolio">
+        <h2>Recent Work</h2>
+        <div class="portfolio__content">
+
+
+            <article class="portfolio__image">
+                <!-- <a href="https://github.com/rewkie/hospital-nightmare"> -->
+                     <img src="./public/images/Hospital Nightmare.PNG" alt="hospital" class="portfolio__thumbnail">
+                <div>
+                    <button class="modal__hospital--button">NIGHTMARE HOSPITAL</button>
                     <!-- Modal content -->
-                    <div>
-                        <span>X</span>
-                    <p>Portfolio Creation</p>
-                    <p>HTML/CSS/JavaScript</p>
-                    <a href="https://github.com/jessicawright/jessicawright.github.io">See more on GitHub!</a>
+                    <div id="modal__hospital" class="modal__hospital">
+                        <span id="modal__hospital--close">X</span>
+                        <p class="modal__hospital--content">Java/OOP/TDD</p>
+                        <a href="https://github.com/rewkie/hospital-nightmare">Check it out on GitHub!</a>
+                    </div>
                 </div>
-            </figure>
-        </article>
-        
-        <article>
-            <figure>
+            </article>
 
-                <a href="https://github.com/jessicawright/VirtualPet"> <img src="./public/images/VirtualPet.PNG"
-                        alt="tamagotchi"></a>
 
-                        <div>
-                            <span>X</span>
+            <article class="portfolio__image">
+                <!-- <a href="https://github.com/jessicawright/jessicawright.github.io">  -->
+                    <img src="./public/images/Portfolio code.PNG" alt="portfolio" class="portfolio__thumbnail">
+                <div>
+                        <button class="modal__portfolio--button">PORTFOLIO CREATION</button>
+                        <!-- Modal content -->
+                        <div id="modal__portfolio" class="modal__portfolio">
+                            <span id="modal__portfolio--close">X</span>
+                            <p class="modal__portfolio--content">HTML/CSS/JavaScript</p>
+                            <a href="https://github.com/jessicawright/jessicawright.github.io">Check it out on GitHub!</a>
+                        </div>
+                </div>
+            </article>
+
+            <article class="portfolio__image">
+                <!-- <a href="https://github.com/jessicawright/VirtualPet">  -->
+                    <img src="./public/images/VirtualPet.PNG"
+                        alt="tamagotchi" class="portfolio__thumbnail">
+                <div>
+                    <span>X</span>
                     <p>Virtual Pet</p>
                     <p>Java/OOP/TDD</p>
                     <a href="https://github.com/jessicawright/VirtualPet">See more on GitHub!</a>
                 </div>
-            </figure>
-        </article>
+            </article>
+
+        </div>
     </section>
-    
+
     <section>
         <h2>Follow Me</h2>
         <ul>
@@ -120,42 +122,42 @@
             <li><a><img href="twitter.com"></a></li>
         </ul>
     </section>
-    
+
     <section>
         <p>I've experienced a decade of non profit success, strengthening relationships between organizations and
             community stakeholders, volunteers and donors. Once I realized that being a software developer meant that I
             could infinitely increase my impact, I jumped into coding and haven't looked back. Call me an idealist - I
             am a changemaker armed with a laptop. I am looking to challenge the status-quo with a cool team while
             building products that improve lives.</p>
-        </section>
-        
-        <section>
-            <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox
-                • Grid • TDD • Agile (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design
-                / Mobile • SQL • Relational Databases • Source Control / Git</p>
-            </section>
-            
-            <section>
-                <h2 class="header__contact">LET'S MAKE SOMETHING TOGETHER!</h2>
-                <p class="call-to-action">If you like what you see and have a project or position in mind, I'd love to chat!
-                    (Maybe over coffee?).</p>
-                    <a href="mailto:wright.983@gmail.com"><i class="far fa-paper-plane fa-md"></i>SEND A MESSAGE</a>
-                    <ul class="contact__links">
-                        <li><a href="https://github.com/jessicawright"><i class="fab fa-github-alt fa-2x"></i></a>
-                            <li><a href="https://www.linkedin.com/in/jessicabwright/"><i class="fab fa-linkedin fa-2x"></i></a>
-                                <li><a href="https://twitter.com/Jessicaburnettw"><i class="fab fa-twitter fa-2x"></i></a>
-                                </ul>
-                            </section>
-                            
-                            <footer>
-                                <p>This site was made using Visual Studio Code and Gimp. Icons are by <a href="https://fontawesome.com/">Font
-                                    Awesome.</a></p>
-                                    <p>Thank you to the generous community at <a href="https://unsplash.com/">Unsplash </a> for
-                                        the header image.</p>
-                                        <p>© 2019 <a href="mailto:wright.983@gmail.com">Jessica Wright</a> Made in the USA</p>
-                                    </footer>
-                                    
-                                    <script src="./public/scripts/main.js"></script>
-                                </body>
-                                
-                                </html>
+    </section>
+
+    <section>
+        <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox
+            • Grid • TDD • Agile (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design
+            / Mobile • SQL • Relational Databases • Source Control / Git</p>
+    </section>
+
+    <section>
+        <h2 class="header__contact">LET'S MAKE SOMETHING TOGETHER!</h2>
+        <p class="call-to-action">If you like what you see and have a project or position in mind, I'd love to chat!
+            (Maybe over coffee?).</p>
+        <a href="mailto:wright.983@gmail.com"><i class="far fa-paper-plane fa-md"></i>SEND A MESSAGE</a>
+        <ul class="contact__links">
+            <li><a href="https://github.com/jessicawright"><i class="fab fa-github-alt fa-2x"></i></a>
+            <li><a href="https://www.linkedin.com/in/jessicabwright/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <li><a href="https://twitter.com/Jessicaburnettw"><i class="fab fa-twitter fa-2x"></i></a>
+        </ul>
+    </section>
+
+    <footer>
+        <p>This site was made using Visual Studio Code and Gimp. Icons are by <a href="https://fontawesome.com/">Font
+                Awesome.</a></p>
+        <p>Thank you to the generous community at <a href="https://unsplash.com/">Unsplash </a> for
+            the header image.</p>
+        <p>© 2019 <a href="mailto:wright.983@gmail.com">Jessica Wright</a> Made in the USA</p>
+    </footer>
+
+    <script src="./public/scripts/main.js"></script>
+</body>
+
+</html>

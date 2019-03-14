@@ -41,7 +41,7 @@
 
 .container {
     width: 100%;
-    background-color: wheat;
+    background-color: #fdf9f1;
 }
 
 .forward {
@@ -87,6 +87,24 @@ li {
     margin: 5rem auto;
 }
 
+.modal__hospital {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    left: 10%; 
+    width: 80%;
+    height: 80%;
+    overflow: none;
+    background-color: blue;
+}
+
+.modal__hospital--button {
+    border-style: solid;
+    border-width: 30px;
+    cursor: pointer;
+}
+
 .modal__tech {
     display: none;
     position: fixed;
@@ -125,10 +143,39 @@ li {
     left: 0;
 }
 
+.portfolio {
+    background-color: #0d1d35;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.portfolio__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.portfolio__image {
+    width: 300px;
+    height: 300px;
+}
+
+.portfolio__thumbnail {
+    max-width: 100%;
+    cursor: pointer;
+}
+
 .profilepic {
     width: 100%;
 }
 
+.show__hospital__modal {
+    display: block;
+}
+
 .show__tech__modal {
-    visibility: visible;
+    display: block;
 }
