@@ -10,17 +10,17 @@ function currentImg(n) {
 function showImg(n) {
   var i;
   var images = document.getElementsByClassName("carousel__image");
- 
+
   if (n > images.length) {
-      image = 1
-    } 
-  if (n < 1) {
-      image = images.length
-    }
-  for (i = 0; i < images.length; i++) {
-      images[i].style.display = "none"; 
+    image = 1
   }
-  images[image-1].style.display = "block";   
+  if (n < 1) {
+    image = images.length
+  }
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  images[image - 1].style.display = "block";
 }
 
 //tech modal//
@@ -42,35 +42,44 @@ closeModal.addEventListener('click', () => {
 
 //hospital modal//
 
-const openHospitalModal = document.querySelector('.portfolio__thumbnail');
+const openHospitalModal = document.querySelector('#portfolio__thumbnail__hospital');
 const closeHospitalModal = document.querySelector('#modal__hospital--close');
 
 openHospitalModal.addEventListener('click', () => {
-  toggleShowHospital(document.querySelector('.modal__hospital'))
+  toggleShowModal(document.querySelector('.modal__hospital'))
 });
 
-function toggleShowHospital(element) {
-  element.classList.toggle('show__hospital__modal');
-}
-
 closeHospitalModal.addEventListener('click', () => {
-  toggleShowHospital(document.querySelector('.modal__hospital'))
+  toggleShowModal(document.querySelector('.modal__hospital'))
 });
 
 //portfolio modal//
 
-const openHospitalModal = document.querySelector('.portfolio__thumbnail');
-const closeHospitalModal = document.querySelector('#modal__hospital--close');
+const openPortfolioModal = document.querySelector('#portfolio__thumbnail__portfolio');
+const closePortfolioModal = document.querySelector('#modal__portfolio--close');
 
-openHospitalModal.addEventListener('click', () => {
-  toggleShowHospital(document.querySelector('.modal__hospital'))
+openPortfolioModal.addEventListener('click', () => {
+  toggleShowModal(document.querySelector('.modal__portfolio'))
 });
 
-function toggleShowHospital(element) {
-  element.classList.toggle('show__hospital__modal');
+closePortfolioModal.addEventListener('click', () => {
+  toggleShowModal(document.querySelector('.modal__portfolio'))
+});
+
+//pet modal//
+
+const openPetModal = document.querySelector('#portfolio__thumbnail__pet');
+const closePetModal = document.querySelector('#modal__pet--close');
+
+openPetModal.addEventListener('click', () => {
+  toggleShowModal(document.querySelector('.modal__pet'))
+});
+
+closePetModal.addEventListener('click', () => {
+  toggleShowModal(document.querySelector('.modal__pet'))
+});
+
+//toggle function//
+function toggleShowModal(element) {
+  element.classList.toggle('show__modal');
 }
-
-closeHospitalModal.addEventListener('click', () => {
-  toggleShowHospital(document.querySelector('.modal__hospital'))
-});
-
