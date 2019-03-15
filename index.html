@@ -14,17 +14,24 @@
 
 <body class="container">
     <header class="main">
-        <nav>
+        <nav class="nav__large">
             <ul class="nav">
                 <li class="nav__blog">BLOG</li>
-                <li><img src="" alt="Logo"></li>
+                <li><i class="fas fa-satellite fa-3x"></i></li>
                 <li class="nav__contact">CONTACT</li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="nav__small">
+                <li><i class="fas fa-satellite fa-3x" id="nav__small--logo"></i></li>
+                <li><button><i class="fas fa-plus fa-2x" id="nav__plus"></i></button></li>
             </ul>
         </nav>
 
         <div class="main__center">
             <div class="main__center--name">
-                <h1>JESSICA WRIGHT</h1>
+                <h1>JESSICA <span class="lastname">WRIGHT</span></h1>
             </div>
 
             <!-- Carousel images -->
@@ -144,27 +151,27 @@
 
 
                         <div class="modal__pet--content">
-                                <h1 class="modal__about">This is where you put a general overview of the project.</h1>
-                                <!-- accordian within pet modal -->
-                                <div class="accordion">
-                                    <button class="accordion__bar" id="pet-skills">Skills Utilized
-                                        <p>+</p>
-                                    </button>
-                                    <p class="accordion__panel" id="pet-skills-panel">Lorem ipsum...</p>
-                                    <button class="accordion__bar" id="pet-challenges">Challenges
-                                        <p>+</p>
-                                    </button>
-                                    <p class="accordion__panel" id="pet-challenge-panel">Lorem ipsum...</p>
-                                    <button class="accordion__bar" id="pet-next">Next Steps
-                                        <p>+</p>
-                                    </button>
-                                    <p class="accordion__panel" id="pet-next-panel">Lorem ipsum...</p>
-                                </div>
+                            <h1 class="modal__about">This is where you put a general overview of the project.</h1>
+                            <!-- accordian within pet modal -->
+                            <div class="accordion">
+                                <button class="accordion__bar" id="pet-skills">Skills Utilized
+                                    <p>+</p>
+                                </button>
+                                <p class="accordion__panel" id="pet-skills-panel">Lorem ipsum...</p>
+                                <button class="accordion__bar" id="pet-challenges">Challenges
+                                    <p>+</p>
+                                </button>
+                                <p class="accordion__panel" id="pet-challenge-panel">Lorem ipsum...</p>
+                                <button class="accordion__bar" id="pet-next">Next Steps
+                                    <p>+</p>
+                                </button>
+                                <p class="accordion__panel" id="pet-next-panel">Lorem ipsum...</p>
                             </div>
+                        </div>
 
 
 
-                        
+
                         <a href="https://github.com/jessicawright/VirtualPet">Check it out on GitHub!</a>
                     </div>
                 </div>

@@ -167,6 +167,7 @@ li {
 .main__center--name {
     align-self: center;
     margin: 5rem auto;
+    color: #fdf9f1;
 }
 
 .modal__about {
@@ -176,13 +177,13 @@ li {
 .modal__hospital {
     display: none;
     position: fixed;
-    z-index: 999;
     top: 10%;
     left: 10%;
     width: 80%;
     height: 80%;
     overflow: none;
     background-color: #f44289;
+    z-index: 2;
 }
 
 .modal__hospital--button {
@@ -206,7 +207,6 @@ li {
 .modal__pet {
     display: none;
     position: fixed;
-    z-index: 999;
     top: 10%;
     left: 10%;
     width: 80%;
@@ -236,12 +236,12 @@ li {
 .modal__portfolio {
     display: none;
     position: fixed;
-    z-index: 999;
     top: 10%;
     left: 10%;
     width: 80%;
     height: 80%;
     overflow: none;
+    z-index: 2;
     background-color: #f44289;
 }
 
@@ -266,7 +266,6 @@ li {
 .modal__tech {
     display: none;
     position: fixed;
-    z-index: 1;
     top: 10%;
     left: 10%;
     width: 80%;
@@ -285,6 +284,21 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.nav li {
+    color: #fdf9f1;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.nav__small {
+    display: none;
+    overflow: hidden;
+}
+
+#nav__plus {
+    color: #fdf9f1;
 }
 
 .previous {
@@ -317,7 +331,6 @@ li {
 
 .portfolio__image {
     max-width: 275px;
-    z-index: 2;
     position: relative;
 }
 
@@ -338,5 +351,33 @@ li {
 
 .show__tech__modal {
     display: block;
-    z-index: 10;
+}
+
+@media only screen and (max-width: 500px) {
+    .main__center--name {
+        text-align: center;
+    }
+    .lastname {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .nav__large {
+        display: none;
+    }
+    .nav__small {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #nav__small--logo {
+        right-margin: -20px;
+        color: #fdf9f1;
+    }
+
 }
