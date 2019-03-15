@@ -82,4 +82,56 @@ closePetModal.addEventListener('click', () => {
 //toggle function//
 function toggleShowModal(element) {
   element.classList.toggle('show__modal');
-}
+};
+
+//accordion action//
+const hospitalSkillsBar = document.querySelector('#hospital-skills');
+const hospitalChallengesBar = document.querySelector('#hospital-challenges');
+const hospitalNextBar = document.querySelector('#hospital-next');
+const portfolioSkillsBar = document.querySelector('#portfolio-skills');
+const portfolioChallengesBar = document.querySelector('#portfolio-challenges');
+const portfolioNextBar = document.querySelector('#portfolio-next');
+const petSkillsBar = document.querySelector('#pet-skills');
+const petChallengesBar = document.querySelector('#pet-challenges');
+const petNextBar = document.querySelector('#pet-next');
+
+hospitalSkillsBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#hospital-skills-panel'))
+});
+
+hospitalChallengesBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#hospital-challenge-panel'))
+});
+
+hospitalNextBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#hospital-next-panel'))
+});
+
+portfolioSkillsBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#portfolio-skills-panel'))
+});
+
+portfolioChallengesBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#portfolio-challenge-panel'))
+});
+
+portfolioNextBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#portfolio-next-panel'))
+});
+
+petSkillsBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#pet-skills-panel'))
+});
+
+petChallengesBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#pet-challenge-panel'))
+});
+
+petNextBar.addEventListener('click', () => {
+  toggleAccordion(document.querySelector('#pet-next-panel'))
+});
+
+//toggle function//
+function toggleAccordion(element) {
+  element.classList.toggle('accordion__panel--show');
+};
