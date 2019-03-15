@@ -135,3 +135,26 @@ petNextBar.addEventListener('click', () => {
 function toggleAccordion(element) {
   element.classList.toggle('accordion__panel--show');
 };
+
+//drop-down nav//
+
+run();
+
+function run() {
+  bindNavButtonToNavList();
+}
+
+function toggleHide(element) {
+  element.classList.toggle('hide');
+}
+
+function bindNavButtonToNavList() {
+
+  const navButton = document.querySelector('#nav__plus');
+
+  navButton.addEventListener('click', function () {
+  const navList = document.querySelector('.nav__small__dropdown');
+  toggleHide(navList);
+});
+
+}
