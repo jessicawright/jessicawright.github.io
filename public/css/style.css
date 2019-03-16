@@ -18,10 +18,10 @@ a {
 
 .about__left {
     grid-column-start: 1 /span 1;
-    border-style: solid;
     margin-left: 1.5rem;
     margin-top: 1.5rem;
     background-color: #0d1d35;
+    position: relative;
 }
 
 .about__left--content {
@@ -40,7 +40,7 @@ a {
     font-size: 20px;
     color: #fdf9f1;
     margin-left: 3rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-right: 2rem;
 }
 
@@ -50,8 +50,8 @@ a {
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     background-color: #0d1d35;
-    max-height: auto;
-    max-width: auto;
+    max-height: 100%;
+    max-width: 100%;
     position: relative;
 }
 
@@ -311,12 +311,20 @@ li {
     height: 80%;
     overflow: none;
     background-color: blue;
+    z-index: 999;
 }
 
 .modal__tech--button {
-    border-style: solid;
-    border-width: 30px;
+    background-color: #f44289;
+    padding: 20px;
     cursor: pointer;
+    margin-top: 2rem;
+    align-self: center;
+    margin-bottom: 3rem;
+    color: #0d1d35;
+    font-weight: bold;
+    font-size: 18px;
+
 }
 
 .nav {
@@ -396,6 +404,20 @@ li {
     background-color: #0d1d35;
 }
 
+.portfolio__header h2 {
+    color: #fdf9f1;
+    padding-top: 3rem;
+}
+
+.portfolio__header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #fdf9f1;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
 .portfolio__image--1 {
     grid-column-start: 1 /span 1;
     padding: 1.5rem;
@@ -438,7 +460,8 @@ li {
 }
 
 .portfolio__header p {
-    padding: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .portfolio__thumbnail {
@@ -453,9 +476,15 @@ li {
 .profilepic {
     max-width: 100%;
     max-height: 100%;
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
     position: absolute;
     object-fit: contain;
+}
+
+.tech-button-div {
+    width: 100%;
+    background-color: #0d1d35;
+    text-align: center;
 }
 
 @media only screen and (max-width: 500px) {
