@@ -14,51 +14,68 @@
 
 <body class="container">
     <header class="main">
-        <nav class="nav__large">
-            <ul class="nav">
-                <li class="nav__blog">BLOG</li>
-                <li><i class="fas fa-satellite fa-3x"></i></li>
-                <li class="nav__contact">CONTACT</li>
-            </ul>
-        </nav>
+        <div class="nightsky">
+            <nav class="nav__large">
+                <ul class="nav">
+                    <li class="nav__blog"><a href="#projects">PROJECTS</a></li>
+                    <li><i class="fas fa-satellite fa-3x"></i></li>
+                    <li class="nav__contact"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <ul class="nav__small">
-                <li><i class="fas fa-satellite fa-3x" id="nav__small--logo"></i></li>
-                <li><button><i class="fas fa-plus fa-2x" id="nav__plus"></i></button></li>
-            </ul>
-            <ul class="nav__small__dropdown hide">
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Follow Me on Social Media</a></li>
-                <li><a href="#">Email Me</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-
-
-        <div class="main__center">
-            <div class="main__center--name">
-                <h1>JESSICA <span class="lastname">WRIGHT</span></h1>
-            </div>
-
-            <!-- Carousel images -->
-            <div class="carousel">
-                <img src="./public/images/carousel placeholder.jpg" class="carousel__image" style="width:100%">
-                <img src="./public/images/carousel placeholder blue.jpg" class="carousel__image" style="width:100%">
-                <img src="./public/images/carousel placeholder black.jpg" class="carousel__image" style="width:100%">
+            <nav>
+                <ul class="nav__small">
+                    <li><i class="fas fa-satellite fa-3x" id="nav__small--logo"></i></li>
+                    <li><button><i class="fas fa-plus fa-2x" id="nav__plus"></i></button></li>
+                </ul>
+                <ul class="nav__small__dropdown hide">
+                    <a href="#">
+                        <div class="dropdown__div">
+                            <li>PROJECTS</li>
+                            <li><i class="fas fa-chevron-circle-right"></i></li>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="dropdown__div">
+                            <li>CONTACT</li>
+                            <li><i class="fas fa-chevron-circle-right"></i></li>
+                        </div>
+                    </a>
+                </ul>
+            </nav>
 
 
-                <!-- Next and previous buttons -->
-                <a class="previous" onclick="currentImg(-1)">
-                    -</a> <a class="forward" onclick="currentImg(1)">+
-                </a>
+            <div class="main__center">
+                <div class="main__center--name">
+                    <h1>JESSICA <span class="lastname">WRIGHT</span></h1>
+                </div>
+
+                <!-- Carousel images -->
+                <div class="carousel">
+                    <img src="./public/images/carousel placeholder.jpg" class="carousel__image" style="width:100%">
+                    <img src="./public/images/carousel placeholder blue.jpg" class="carousel__image" style="width:100%">
+                    <img src="./public/images/carousel placeholder black.jpg" class="carousel__image"
+                        style="width:100%">
+
+
+                    <!-- Next and previous buttons -->
+                    <a class="previous" onclick="currentImg(-1)">
+                        -</a> <a class="forward" onclick="currentImg(1)">+
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <div class="about">
         <section class="about__left">
-            <h2>Hello! I am Jessica Wright. I.... I am passionate...Hello! I am Jessica Wright. I.... I am passionate...
+            <h2>Hello! I am Jessica Wright. I've experienced a decade of non profit success, strengthening relationships
+                between organizations and
+                community stakeholders, volunteers and donors. Once I realized that being a software developer meant
+                that I could infinitely increase my impact, I jumped into coding and haven't looked back. Call me an
+                idealist -
+                I am a changemaker armed with a laptop. I am looking to challenge the status-quo with a cool team while
+                building products that improve lives.
             </h2>
             <button id="modal__tech--button" class="modal__tech--button">TECH STACK</button>
 
@@ -78,16 +95,22 @@
         </figure>
     </div>
 
-    <section class="portfolio">
-        <h2>Recent Work</h2>
+    <section class="portfolio" id="projects">
+        <div class="portfolio__header">
+            <h2>Recent Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed felis dolor, iaculis vel sapien ac,
+                fringilla venenatis tortor. Sed lobortis laoreet metus convallis finibus. Fusce laoreet in erat a
+                faucibus. Etiam a massa justo. Sed fringilla vulputate dignissim. Etiam lobortis scelerisque justo,
+                imperdiet efficitur dolor auctor nec. Fusce dictum tellus.</p>
+        </div>
         <div class="portfolio__content">
 
 
-            <article class="portfolio__image">
+            <article class="portfolio__image--1">
                 <img src="./public/images/Hospital Nightmare.PNG" alt="hospital" class="portfolio__thumbnail"
                     id="portfolio__thumbnail__hospital">
 
-                <button class="modal__hospital--button">NIGHTMARE HOSPITAL</button>
+                <div class="modal__hospital--button">NIGHTMARE HOSPITAL</div>
                 <!-- Modal content -->
                 <div id="modal__hospital" class="modal__hospital">
                     <span id="modal__hospital--close">Close</span>
@@ -114,11 +137,11 @@
                 </div>
             </article>
 
-            <article class="portfolio__image">
+            <article class="portfolio__image--2">
                 <img src="./public/images/Portfolio code.PNG" alt="portfolio" class="portfolio__thumbnail"
                     id="portfolio__thumbnail__portfolio">
                 <div>
-                    <button class="modal__portfolio--button">PORTFOLIO CREATION</button>
+                    <div class="modal__portfolio--button">PORTFOLIO CREATION</div>
                     <!-- Modal content -->
                     <div id="modal__portfolio" class="modal__portfolio">
                         <span id="modal__portfolio--close">Close</span>
@@ -146,11 +169,12 @@
                     </div>
                 </div>
             </article>
-            <article class="portfolio__image">
+
+            <article class="portfolio__image--3">
                 <img src="./public/images/VirtualPet.PNG" alt="tamagotchi" class="portfolio__thumbnail"
                     id="portfolio__thumbnail__pet">
                 <div>
-                    <button class="modal__pet--button">VIRTUAL PET</button>
+                    <div class="modal__pet--button">VIRTUAL PET</div>
                     <!-- Modal content -->
                     <div id="modal__pet" class="modal__pet">
                         <span id="modal__pet--close">Close</span>
@@ -196,15 +220,6 @@
                 <li><a href="linkedin.com"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </section>
-        <section class="follow__middle">
-            <p>I've experienced a decade of non profit success, strengthening relationships between organizations and
-                community stakeholders, volunteers and donors. Once I realized that being a software developer meant
-                that I
-                could infinitely increase my impact, I jumped into coding and haven't looked back. Call me an idealist -
-                I
-                am a changemaker armed with a laptop. I am looking to challenge the status-quo with a cool team while
-                building products that improve lives.</p>
-        </section>
         <section class="follow__right">
             <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox
                 • Grid • TDD • Agile (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive
@@ -213,7 +228,7 @@
         </section>
     </div>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="header__contact">LET'S MAKE SOMETHING TOGETHER!</h2>
         <p class="call-to-action">If you like what you see and have a project or position in mind, I'd love to chat!
             (Maybe over coffee?).</p>

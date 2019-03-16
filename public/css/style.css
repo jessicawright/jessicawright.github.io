@@ -4,6 +4,35 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    margin: auto;
+}
+
+.about__left {
+    grid-column-start: 1 /span 1;
+    border-style: solid;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #0d1d35;
+}
+
+.about__right {
+    grid-column-start: 2 /span 1;
+    border-style: solid;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #0d1d35;
+    max-height: auto;
+    max-width: auto;
+}
+
 .accordion {
     grid-column-start: 2 / span 2;
 }
@@ -32,31 +61,6 @@
     display: contents;
 }
 
-.about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.5rem;
-    margin: auto;
-}
-
-.about__left {
-    grid-column-start: 1 /span 1;
-    border-style: solid;
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
-    background-color: #0d1d35;
-}
-
-.about__right {
-    grid-column-start: 2 /span 1;
-    border-style: solid;
-    margin-top: 1.5rem;
-    margin-right: 1.5rem;
-    background-color: #0d1d35;
-    max-height: auto;
-    max-width: auto;
-}
-
 .carousel {
     max-width: 600px;
     max-height: 200px;
@@ -80,9 +84,19 @@
     background-color: #fdf9f1;
 }
 
+.dropdown__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dropdown__div:hover {
+    background-color: #f44289;
+}
+
 .follow {
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-column-gap: 1.5rem;
     margin: auto;
 }
@@ -91,23 +105,14 @@
     grid-column-start: 1 /span 2;
     border-style: solid;
     margin-left: 1.5rem;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     background-color: #0d1d35;
-}
-
-.follow__middle {
-    grid-column-start: 3 /span 3;
-    border-style: solid;
-    margin-top: 1.5rem;
-    background-color: #0d1d35;
-    max-height: auto;
-    max-width: auto;
 }
 
 .follow__right {
     grid-column-start: 4 /span 2;
     border-style: solid;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     margin-right: 1.5rem;
     background-color: #0d1d35;
     max-height: auto;
@@ -142,7 +147,7 @@ footer {
 
 html {
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 li {
@@ -150,7 +155,6 @@ li {
 }
 
 .main {
-    background-color: #0d1d35;
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
@@ -188,11 +192,14 @@ li {
 
 .modal__hospital--button {
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     cursor: pointer;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    left: 50%;
+    top: 50%;
+    background-color: #f44289;
+    color: #0d1d35;
+    padding: 20px;
 }
 
 .modal__hospital--content {
@@ -217,11 +224,14 @@ li {
 
 .modal__pet--button {
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     cursor: pointer;
     position: absolute;
     top: 25%;
     left: 25%;
+    background-color: #f44289;
+    padding: 20px;
+    color: #0d1d35;
 }
 
 .modal__pet--content {
@@ -243,15 +253,21 @@ li {
     overflow: none;
     z-index: 2;
     background-color: #f44289;
+    
 }
 
 .modal__portfolio--button {
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     cursor: pointer;
     position: absolute;
     top: 25%;
     left: 25%;
+    /* margin-left: -86.28px;
+    margin-top: -33.33px; */
+    background-color: #f44289;
+    color: #0d1d35;
+    padding: 20px;
 }
 
 .modal__portfolio--content {
@@ -300,15 +316,32 @@ li {
 .nav__small__dropdown {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     border-style: solid;
-    background-color: red;
-    position: relative;
+    border-color: #0d1d35;
+    background-color: #fdf9f1;
+    color: #0d1d35;
+    position: absolute;
     right: 0;
+    text-align: center;
+    width: 50%;
+}
+
+.nav__small__dropdown li {
+    padding: 20px 10px;
+    color: #0d1d35;
 }
 
 #nav__plus {
     color: #fdf9f1;
+}
+
+.nightsky {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/blue\ gradient.png);
+    background-size: cover;
+    background-position: bottom;
 }
 
 .previous {
@@ -325,27 +358,62 @@ li {
     left: 0;
 }
 
-.portfolio {
-    background-color: #0d1d35;
-    margin-top: 1.5rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-}
-
 .portfolio__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    background-color: #0d1d35;
 }
 
-.portfolio__image {
-    max-width: 275px;
+.portfolio__image--1 {
+    grid-column-start: 1 /span 1;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #0d1d35;
     position: relative;
+    max-width: 5000px;
+    max-height: 5000px;
+}
+
+.portfolio__image--2 {
+    grid-column-start: 2 /span 1;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #0d1d35;
+    position: relative;
+    width: 100%;
+}
+
+.portfolio__image--3 {
+    grid-column-start: 3 /span 1;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #0d1d35;
+    position: relative;
+    width: 100%;
+}
+
+.portfolio__header {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #0d1d35;
+    text-align: center;
+}
+
+.portfolio__header h2 {
+    padding-top: 1.5rem;
+}
+
+.portfolio__header p {
+    padding: 3rem;
 }
 
 .portfolio__thumbnail {
-    max-width: 100%;
+    width: 100%;
+    /* max-height: 100%; */
+    overflow: hidden;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -362,9 +430,7 @@ li {
     .lastname {
         display: block;
     }
-}
 
-@media only screen and (max-width: 450px) {
     .nav__large {
         display: none;
     }
@@ -379,6 +445,95 @@ li {
     #nav__small--logo {
         margin-right: -20px;
         color: #fdf9f1;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1.5rem;
+        margin: auto;
+    }
+
+    .about__left {
+        margin-right: 1.5rem;
+    }
+
+    .about__right {
+        margin-left: 1.5rem;
+    }
+
+    .profilepic {
+        padding: 5rem;
+    }
+
+    .portfolio__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 1.5rem 1.5rem 1.5rem;
+        background-color: #0d1d35;
+        justify-items: center;
+    }
+
+    .portfolio__image--1 {
+        
+        padding: 0rem;
+        margin-top: 0rem;
+        background-color: #0d1d35;
+        position: relative;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    
+    .portfolio__image--2 {
+        
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin-top: 0rem;
+        background-color: #0d1d35;
+        position: relative;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    
+    .portfolio__image--3 {
+        
+        padding: 0rem;
+        padding-bottom: 1.5rem;
+        margin-top: 0rem;
+        background-color: #0d1d35;
+        position: relative;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .modal__hospital--button {
+        /* margin-left: -125px;
+        margin-top: -44.66px; */
+    }
+
+    .modal__pet--button {
+        /* margin-left: -133.3px;
+        margin-top: -33.33px; */
+    }
+
+    .modal__portfolio--button {
+        /* margin-left: -86.28px;
+        margin-top: -33.33px; */
+    }
+
+    .follow {
+        grid-template-columns: 1fr;
+    }
+    
+    .follow__left {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .follow__right {
+        margin-left: 1.5rem;
     }
 }
 
