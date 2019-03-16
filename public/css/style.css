@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    color: #fdf9f1;
 }
 
 .about {
@@ -23,6 +24,26 @@ a {
     background-color: #0d1d35;
 }
 
+.about__left--content {
+    margin-left: 5rem;
+}
+
+.about__left h2 {
+    color: #fdf9f1;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+}
+
+.about__left p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #fdf9f1;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
 .about__right {
     grid-column-start: 2 /span 1;
     border-style: solid;
@@ -31,6 +52,7 @@ a {
     background-color: #0d1d35;
     max-height: auto;
     max-width: auto;
+    position: relative;
 }
 
 .accordion {
@@ -147,7 +169,8 @@ footer {
 
 html {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 2rem;
+    
 }
 
 li {
@@ -304,8 +327,16 @@ li {
 
 .nav li {
     color: #fdf9f1;
-    font-size: 20px;
-    margin: 20px;
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.nav li:first-of-type {
+    margin-left: 30px;
+}
+
+.nav li:last-of-type {
+    margin-right: 30px;
 }
 
 .nav__small {
@@ -420,7 +451,11 @@ li {
 }
 
 .profilepic {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1.5rem;
+    position: absolute;
+    object-fit: contain;
 }
 
 @media only screen and (max-width: 500px) {
