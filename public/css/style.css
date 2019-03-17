@@ -209,6 +209,26 @@ a {
     max-width: auto;
 }
 
+.follow__right--content {
+    color: #fdf9f1;
+    text-align: center;
+}
+
+.follow__right--content h2 {
+    padding-top: 2rem;
+}
+
+.follow__right--content p {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.follow__right--content span {
+    color: #f44289; 
+}
+
 .follow--twitter {
     display: flex;
     flex-direction: row;
