@@ -101,6 +101,32 @@ a {
     /* position: relative; */
 }
 
+.contact a {
+    border-style: solid;
+    color: #f44289;
+    padding: 30px;
+}
+
+.contact-content {
+    color: #fdf9f1;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.contact i {
+    padding-right: 20px;
+}
+
+.contact p {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .container {
     width: 100%;
     background-color: #fdf9f1;
@@ -262,6 +288,15 @@ footer {
     margin-right: 1.5rem;
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
+    text-align: center;
+    color: #fdf9f1;
+    font-size: 14px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer a {
+    color: #f44289;
 }
 
 .forward {
@@ -452,6 +487,7 @@ li {
     color: #fdf9f1;
     font-size: 27px;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav li:first-of-type {
