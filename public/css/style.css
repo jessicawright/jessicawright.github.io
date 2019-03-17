@@ -83,16 +83,6 @@ a {
     display: contents;
 }
 
-.carousel {
-    max-width: 900px;
-    max-height: 300px;
-    margin: auto;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 6rem;
-}
-
 .contact {
     background-color: #0d1d35;
     margin-top: 1.5rem;
@@ -302,15 +292,22 @@ footer {
 .forward {
     cursor: pointer;
     position: absolute;
-    top: 25%;
+    top: 40%;
     width: auto;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     color: white;
     font-weight: bold;
     font-size: 20px;
     border-radius: 3px 0 0 3px;
     user-select: none;
     right: 0;
+    z-index: 1000;
+    background-color: gray;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .github__link {
@@ -343,8 +340,10 @@ li {
 
 .main__center--name {
     align-self: center;
-    margin: 5rem auto;
+    margin: 6rem auto;
     color: #fdf9f1;
+    font-size: 30px;
+    letter-spacing: 5px;
 }
 
 .modal__about {
@@ -354,10 +353,13 @@ li {
 .modal__hospital {
     display: none;
     position: fixed;
-    top: 10%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
-    height: 80%;
+    height: auto;
+    max-height: 80%;
+    max-width: 100%;
     overflow: none;
     background-color: #f44289;
     z-index: 2;
@@ -368,8 +370,9 @@ li {
     border-width: 2px;
     cursor: pointer;
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #f44289;
     color: #0d1d35;
     padding: 20px;
@@ -387,10 +390,13 @@ li {
 .modal__pet {
     display: none;
     position: fixed;
-    top: 10%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
-    height: 80%;
+    height: auto;
+    max-width: 100%;
+    max-height: 80%;
     overflow: none;
     background-color: #f44289;
 }
@@ -400,11 +406,13 @@ li {
     border-width: 2px;
     cursor: pointer;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #f44289;
     padding: 20px;
     color: #0d1d35;
+    align-self: center;
 }
 
 .modal__pet--content {
@@ -419,10 +427,13 @@ li {
 .modal__portfolio {
     display: none;
     position: fixed;
-    top: 10%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
-    height: 80%;
+    height: auto;
+    max-width: 100%;
+    max-height: 80%;
     overflow: none;
     z-index: 2;
     background-color: #f44289;
@@ -434,10 +445,9 @@ li {
     border-width: 2px;
     cursor: pointer;
     position: absolute;
-    top: 25%;
-    left: 25%;
-    /* margin-left: -86.28px;
-    margin-top: -33.33px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #f44289;
     color: #0d1d35;
     padding: 20px;
@@ -455,10 +465,13 @@ li {
 .modal__tech {
     display: none;
     position: fixed;
-    top: 10%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
-    height: 80%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     overflow: none;
     background-color: blue;
     z-index: 999;
@@ -481,6 +494,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 5;
 }
 
 .nav li {
@@ -488,6 +502,11 @@ li {
     font-size: 27px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
+    z-index: 10;
+}
+
+.nav a:hover {
+    color: #f44289;
 }
 
 .nav li:first-of-type {
@@ -528,24 +547,38 @@ li {
 
 .nightsky {
     width: 100%;
-    height: 100%;
-    background-image: url(../images/blue\ gradient.png);
-    background-size: cover;
-    background-position: bottom;
+    height: auto;
+    background-position: center;
+    position: relative;
+    z-index: -10;
+}
+
+.main__content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
 }
 
 .previous {
     cursor: pointer;
     position: absolute;
-    top: 25%;
+    top: 40%;
     width: auto;
-    padding: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     color: white;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
     left: 0;
+    z-index: 1000;
+    background-color: gray;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .portfolio__content {

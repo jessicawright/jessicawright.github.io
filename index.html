@@ -16,8 +16,23 @@
 
 <body class="container">
     <header class="main">
+
+        <!-- Carousel images -->
         <div class="nightsky">
-            <img src="./public/images/darkplanet.png">
+            <img src="./public/images/cosmos-planets-wallpapers-62538-4786683.jpg" class="carousel__image"
+                style="width:100%">
+            <img src="./public/images/cosmos 2.jpg" class="carousel__image" style="width:100%">
+            <img src="./public/images/cosmos 3.jpg" class="carousel__image" style="width:100%">
+        </div>
+
+        <div class="nightsky--buttons">
+            <!-- Next and previous buttons -->
+            <a class="previous" onclick="currentImg(-1)">
+                <</a> <a class="forward" onclick="currentImg(1)">>
+            </a>
+        </div>
+        <div class="main__content">
+            <!-- nav starts here -->
             <nav class="nav__large">
                 <ul class="nav">
                     <li class="nav__blog"><a href="#projects">PROJECTS</a></li>
@@ -52,20 +67,6 @@
                 <div class="main__center--name">
                     <h1>JESSICA <span class="lastname">WRIGHT</span></h1>
                 </div>
-
-                <!-- Carousel images -->
-                <div class="carousel">
-                    <img src="./public/images/carousel placeholder.jpg" class="carousel__image" style="width:100%">
-                    <img src="./public/images/carousel placeholder blue.jpg" class="carousel__image" style="width:100%">
-                    <img src="./public/images/carousel placeholder black.jpg" class="carousel__image"
-                        style="width:100%">
-
-
-                    <!-- Next and previous buttons -->
-                    <a class="previous" onclick="currentImg(-1)">
-                        -</a> <a class="forward" onclick="currentImg(1)">+
-                    </a>
-                </div>
             </div>
         </div>
     </header>
@@ -92,7 +93,7 @@
 
             <!-- Modal content -->
             <div id="modal__tech" class="modal__tech">
-                <span id="modal__tech--close">X</span>
+                <span id="modal__tech--close">Close</span>
                 <p class="modal__tech--content">Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 •
                     Flexbox • Grid • TDD • Agile
                     (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
@@ -230,7 +231,8 @@
                 <h2>Follow Me</h2>
                 <ul class="follow__left--icons">
                     <div class="follow--twitter">
-                        <li><a href="https://twitter.com/Jessicaburnettw"><i class="fab fa-twitter-square fa-2x"></i></li>
+                        <li><a href="https://twitter.com/Jessicaburnettw"><i class="fab fa-twitter-square fa-2x"></i>
+                        </li>
                         <p>twitter</p></a>
                     </div>
                     <div class="follow--github">
@@ -238,7 +240,8 @@
                         <p>github</p></a>
                     </div>
                     <div class="follow--linkedin">
-                        <li><a href="https://www.linkedin.com/in/jessicabwright/"><i class="fab fa-linkedin fa-2x"></i></li>
+                        <li><a href="https://www.linkedin.com/in/jessicabwright/"><i class="fab fa-linkedin fa-2x"></i>
+                        </li>
                         <p>linkedIn</p></a>
                     </div>
                 </ul>
@@ -246,21 +249,24 @@
         </section>
         <section class="follow__right">
             <div class="follow__right--content">
-            <h2>My Tech Stack</h2>
-            <p><span>Java</span> • <span>Spring</span> • Hibernate • JPA • <span>JavaScript</span> • MVC • <span>HTML5</span> • <span>CSS3</span> • <span>TDD</span> • <span>Object Oriented Programming</span> • AJAX • JSON • Flexbox
+                <h2>My Tech Stack</h2>
+                <p><span>Java</span> • <span>Spring</span> • Hibernate • JPA • <span>JavaScript</span> • MVC •
+                    <span>HTML5</span> • <span>CSS3</span> • <span>TDD</span> • <span>Object Oriented Programming</span>
+                    • AJAX • JSON • Flexbox
                     • Grid • Restful APIs • Responsive Design
-                / Mobile • SQL • Relational Databases • <span>Source Control / Git</span> • <span>Agile (Scrum)</span> </p>
+                    / Mobile • SQL • Relational Databases • <span>Source Control / Git</span> • <span>Agile
+                        (Scrum)</span> </p>
             </div>
         </section>
     </div>
 
     <section class="contact" id="contact">
         <div class="contact-content">
-        <h2 class="header__contact">LET'S MAKE SOMETHING TOGETHER!</h2>
-        <p class="call-to-action">If you like what you see and have a project or position in mind, I'd love to chat!
-            (Maybe over coffee?)</p>
-        <a href="mailto:wright.983@gmail.com"><i class="far fa-paper-plane fa-md"></i>SEND A MESSAGE</a>
-    </div>
+            <h2 class="header__contact">LET'S MAKE SOMETHING TOGETHER!</h2>
+            <p class="call-to-action">If you like what you see and have a project or position in mind, I'd love to chat!
+                (Maybe over coffee?)</p>
+            <a href="mailto:wright.983@gmail.com"><i class="far fa-paper-plane fa-md"></i>SEND A MESSAGE</a>
+        </div>
     </section>
 
     <footer>
