@@ -52,7 +52,7 @@ a {
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     background-color: #0d1d35;
-    background-image: url(../images/profile\ pic\ for\ editing\ cropped.jpg);
+    /* background-image: url(../images/profile\ pic\ for\ editing\ cropped.jpg); */
     min-height: 800px;
     /* width: 100%; */
     position: relative;
@@ -382,6 +382,14 @@ li {
     font-size: 30px;
     letter-spacing: 5px;
     max-width: 100%;
+    line-height: 40px;
+    padding-left: 3rem;
+}
+
+.main__center--name p {
+    font-size: 44px;
+    padding-right: 2rem;
+    padding-left: .25rem;
 }
 
 .main__content {
@@ -397,10 +405,13 @@ li {
     position: absolute;
     max-height: 80px;
     max-width: 100%;
-    top: 90%;
+    top: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .main__wrapper h2 {
@@ -534,8 +545,9 @@ li {
     max-width: 100%;
     max-height: 100%;
     overflow: none;
-    background-color: blue;
+    background-color: #f44289;
     z-index: 999;
+    /* text-align: center; */
 }
 
 .modal__tech--button {
@@ -548,6 +560,11 @@ li {
     color: #0d1d35;
     font-weight: bold;
     font-size: 18px;
+}
+
+.modal__tech--content {
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
 .nav {
