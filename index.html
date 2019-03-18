@@ -36,24 +36,24 @@
             <nav class="nav__large">
                 <ul class="nav">
                     <li class="nav__blog"><a href="#projects">PROJECTS</a></li>
-                    <li><img src="logo"></li>
+                    <li><img src="./public/images/rocket.png"></li>
                     <li class="nav__contact"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
 
             <nav>
                 <ul class="nav__small">
-                    <li><i class="fas fa-satellite fa-3x" id="nav__small--logo"></i></li>
+                    <li><img src="./public/images/rocket.png"></li>
                     <li><button><i class="fas fa-plus fa-2x" id="nav__plus"></i></button></li>
                 </ul>
                 <ul class="nav__small__dropdown hide">
-                    <a href="#">
+                    <a href="#projects">
                         <div class="dropdown__div">
                             <li>PROJECTS</li>
                             <li><i class="fas fa-chevron-circle-right"></i></li>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#contact">
                         <div class="dropdown__div">
                             <li>CONTACT</li>
                             <li><i class="fas fa-chevron-circle-right"></i></li>
@@ -65,12 +65,19 @@
 
             <div class="main__center">
                 <div class="main__center--name">
-                    <h1>JESSICA <span class="lastname">WRIGHT</span></h1>
+                    <h1>JESSICA <span class="lastname">WRIGHT</span>I'm writing more stuff to test if the div will be
+                        responsive. I'm writing more stuff to test if the div will be responsive. I'm writing more stuff
+                        to test if the div will be responsive. I'm writing more stuff to test if the div will be
+                        responsive.</h1>
+                </div>
+                <div class="main__wrapper">
+                    <h2>Full-stack developer in Columbus, Ohio</h2>
                 </div>
             </div>
         </div>
     </header>
 
+    <!--About Section-->
     <div class="about">
         <section class="about__left">
             <div about__left--content>
@@ -90,7 +97,9 @@
             <div class="tech-button-div">
                 <button id="modal__tech--button" class="modal__tech--button">MY TECH STACK</button>
             </div>
-
+            <div class="rocketiconwithtail">
+                <img src="./public/images/rocketiconwithtail.png" alt="">
+            </div>
             <!-- Modal content -->
             <div id="modal__tech" class="modal__tech">
                 <span id="modal__tech--close">Close</span>
@@ -103,79 +112,94 @@
         </section>
 
         <figure class="about__right">
-            <img src="./public/images/profile pic for editing cropped.jpg" class="profilepic" alt="Me">
         </figure>
     </div>
 
+
+
+    <!--Portfolio Section-->
     <section class="portfolio" id="projects">
         <div class="portfolio__header">
-            <div class="portfolio__header--content">
-                <h2>Recent Work</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed felis dolor, iaculis vel sapien ac,
-                    fringilla venenatis tortor. Sed lobortis laoreet metus convallis finibus. Fusce laoreet in erat a
-                    faucibus. Etiam a massa justo. Sed fringilla vulputate dignissim. Etiam lobortis scelerisque justo,
-                    imperdiet efficitur dolor auctor nec. Fusce dictum tellus.</p>
-            </div>
+            <h2>Recent Work</h2>
         </div>
         <div class="portfolio__content">
-
-
-            <article class="portfolio__image--1">
+            <article class="portfolio__block1">
                 <img src="./public/images/Hospital Nightmare.PNG" alt="hospital" class="portfolio__thumbnail"
                     id="portfolio__thumbnail__hospital">
 
                 <div class="modal__hospital--button">NIGHTMARE HOSPITAL</div>
+
                 <!-- Modal content -->
                 <div id="modal__hospital" class="modal__hospital">
                     <span id="modal__hospital--close">Close</span>
                     <div class="modal__hospital--content">
-                        <h1 class="modal__about">This is where you put a general overview of the project.</h1>
+                        <h1 class="modal__about">Nightmare Hopsital is a Java console game created over the course
+                            of a weekend. </h1>
                         <!-- accordian within hospital modal -->
                         <div class="accordion">
-                            <button class="accordion__bar" id="hospital-skills">Skills Utilized
+                            <button class="accordion__bar" id="hospital-skills">SKILLS
                                 <p>+</p>
                             </button>
-                            <p class="accordion__panel" id="hospital-skills-panel">Lorem ipsum...</p>
-                            <button class="accordion__bar" id="hospital-challenges">Challenges
+                            <p class="accordion__panel" id="hospital-skills-panel">Using Git, I worked with a
+                                partner to build a console game in Java using OOP. It highlights my knowledge of
+                                Abstraction, Polymorphism, Inheritance and Encapsulation. This project was built
+                                using TDD.</p>
+                            <button class="accordion__bar" id="hospital-challenges">CHALLENGES
                                 <p>+</p>
                             </button>
-                            <p class="accordion__panel" id="hospital-challenge-panel">Lorem ipsum...</p>
-                            <button class="accordion__bar" id="hospital-next">Next Steps
-                                <p>+</p>
-                            </button>
-                            <p class="accordion__panel" id="hospital-next-panel">Lorem ipsum...</p>
+                            <p class="accordion__panel" id="hospital-challenge-panel">The most obvious challenge was
+                                completing this project over the course of only 30 hours. Additionally, this was my
+                                first use of interfaces, final and abstract classes as well as Java constants.
+                                Working remotely from my partner required a better understanding of git source
+                                control, which I acquired.<p>
+                                    <button class="accordion__bar" id="hospital-next">LEARNINGS
+                                        <p>+</p>
+                                    </button>
+                                    <p class="accordion__panel" id="hospital-next-panel">This was the first project
+                                        in which I fully utilized, and gained an immense appreciation for,
+                                        test-driven development. Testing first required thinking through the
+                                        intended outcomes of methods which paved a roadmap for the ultimate
+                                        direction of the project.</p>
                         </div>
+                        <a href="https://github.com/rewkie/hospital-nightmare" class="github__link">Check it out on
+                            GitHub!</a>
                     </div>
-                    <a href="https://github.com/rewkie/hospital-nightmare" class="github__link">Check it out on
-                        GitHub!</a>
                 </div>
             </article>
 
-            <article class="portfolio__image--2">
+            <article class="portfolio__block2">
                 <img src="./public/images/Portfolio code.PNG" alt="portfolio" class="portfolio__thumbnail"
                     id="portfolio__thumbnail__portfolio">
-                <div>
-                    <div class="modal__portfolio--button">PORTFOLIO CREATION</div>
-                    <!-- Modal content -->
-                    <div id="modal__portfolio" class="modal__portfolio">
-                        <span id="modal__portfolio--close">Close</span>
-                        <div class="modal__portfolio--content">
-                            <h1 class="modal__about">This is where you put a general overview of the project.</h1>
-                            <!-- accordian within portfolio modal -->
-                            <div class="accordion">
-                                <button class="accordion__bar" id="portfolio-skills">Skills Utilized
-                                    <p>+</p>
-                                </button>
-                                <p class="accordion__panel" id="portfolio-skills-panel">Lorem ipsum...</p>
-                                <button class="accordion__bar" id="portfolio-challenges">Challenges
-                                    <p>+</p>
-                                </button>
-                                <p class="accordion__panel" id="portfolio-challenge-panel">Lorem ipsum...</p>
-                                <button class="accordion__bar" id="portfolio-next">Next Steps
-                                    <p>+</p>
-                                </button>
-                                <p class="accordion__panel" id="portfolio-next-panel">Lorem ipsum...</p>
-                            </div>
+                <div class="modal__portfolio--button">PORTFOLIO CREATION</div>
+
+                <!-- Modal content -->
+                <div id="modal__portfolio" class="modal__portfolio">
+                    <span id="modal__portfolio--close">Close</span>
+                    <div class="modal__portfolio--content">
+                        <h1 class="modal__about">This portfolio is meant to display all of my full-stack projects.
+                        </h1>
+                        <!-- accordian within portfolio modal -->
+                        <div class="accordion">
+                            <button class="accordion__bar" id="portfolio-skills">SKILLS
+                                <p>+</p>
+                            </button>
+                            <p class="accordion__panel" id="portfolio-skills-panel">This project required the use of
+                                git, HTML5, CSS3 and JavaScript. In addition, graphics were created by me using
+                                gimp.</p>
+                            <button class="accordion__bar" id="portfolio-challenges">CHALLENGES
+                                <p>+</p>
+                            </button>
+                            <p class="accordion__panel" id="portfolio-challenge-panel">This portfolio includes the
+                                use of image carousels, accordions and modals, all created with JavaScript. No
+                                frameworks or libraries were permitted, encouraging me to understand the
+                                fundamentals of vanilla JavaScript.</p>
+                            <button class="accordion__bar" id="portfolio-next">LEARNINGS
+                                <p>+</p>
+                            </button>
+                            <p class="accordion__panel" id="portfolio-next-panel">There are a lot of design elements
+                                I would like to edit throughout this portfolio moving forward. I would like to add
+                                overlays behind open modal boxes for better focus. I also intend to revisit the site
+                                for better mobile responsiveness and accessibility.</p>
                         </div>
                         <a href="https://github.com/jessicawright/jessicawright.github.io" class="github__link">Check it
                             out on
@@ -184,47 +208,46 @@
                 </div>
             </article>
 
-            <article class="portfolio__image--3">
+            <article class="portfolio__block3">
                 <img src="./public/images/VirtualPet.PNG" alt="tamagotchi" class="portfolio__thumbnail"
                     id="portfolio__thumbnail__pet">
-                <div>
-                    <div class="modal__pet--button">VIRTUAL PET</div>
-                    <!-- Modal content -->
-                    <div id="modal__pet" class="modal__pet">
-                        <span id="modal__pet--close">Close</span>
+                <div class="modal__pet--button">VIRTUAL PET</div>
 
-
-
-                        <div class="modal__pet--content">
-                            <h1 class="modal__about">This is where you put a general overview of the project.</h1>
-                            <!-- accordian within pet modal -->
-                            <div class="accordion">
-                                <button class="accordion__bar" id="pet-skills">Skills Utilized
+                <!-- Modal content -->
+                <div id="modal__pet" class="modal__pet">
+                    <span id="modal__pet--close">Close</span>
+                    <div class="modal__pet--content">
+                        <h1 class="modal__about">Virtual Pet is a tamagotchi-like Java console application. You must
+                            bath, feed and play with your pets to keep their health levels up.</h1>
+                        <!-- accordian within pet modal -->
+                        <div class="accordion">
+                            <button class="accordion__bar" id="pet-skills">SKILLS
+                                <p>+</p>
+                            </button>
+                            <p class="accordion__panel" id="pet-skills-panel">This application was developed in a
+                                team of 5 over the course of 5, 3-day sprints. It required the use of git, TDD with
+                                JUnit, Java and OOP in an agile environment. </p>
+                            <button class="accordion__bar" id="pet-challenges">CHALLENGES
+                                <p>+</p>
+                            </button>
+                            <p class="accordion__panel" id="pet-challenge-panel">We used while loops, for loops and
+                                switch statements, gaining an understanding of when to use each type of control flow
+                                statement. Additional challenges including learning how and when to use a HashMap,
+                                and how to iterate over it.</p>
+                            <!-- <button class="accordion__bar" id="pet-next">Next Steps
                                     <p>+</p>
                                 </button>
-                                <p class="accordion__panel" id="pet-skills-panel">Lorem ipsum...</p>
-                                <button class="accordion__bar" id="pet-challenges">Challenges
-                                    <p>+</p>
-                                </button>
-                                <p class="accordion__panel" id="pet-challenge-panel">Lorem ipsum...</p>
-                                <button class="accordion__bar" id="pet-next">Next Steps
-                                    <p>+</p>
-                                </button>
-                                <p class="accordion__panel" id="pet-next-panel">Lorem ipsum...</p>
-                            </div>
+                                <p class="accordion__panel" id="pet-next-panel">Lorem ipsum...</p> -->
                         </div>
-
-
-
-
                         <a href="https://github.com/jessicawright/VirtualPet">Check it out on GitHub!</a>
                     </div>
                 </div>
             </article>
-
         </div>
     </section>
 
+
+    <!--Follow Section-->
     <div class="follow">
         <section class="follow__left">
             <div class="follow__left--content">
@@ -260,6 +283,7 @@
         </section>
     </div>
 
+    <!--Contact Section-->
     <section class="contact" id="contact">
         <div class="contact-content">
             <h2 class="header__contact">LET'S MAKE SOMETHING TOGETHER!</h2>
@@ -269,6 +293,7 @@
         </div>
     </section>
 
+    <!--Footer-->
     <footer>
         <p>This site was made using Visual Studio Code and Gimp. Icons are by <a href="https://fontawesome.com/">Font
                 Awesome.</a></p>

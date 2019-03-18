@@ -127,9 +127,9 @@ petChallengesBar.addEventListener('click', () => {
   toggleAccordion(document.querySelector('#pet-challenge-panel'))
 });
 
-petNextBar.addEventListener('click', () => {
-  toggleAccordion(document.querySelector('#pet-next-panel'))
-});
+// petNextBar.addEventListener('click', () => {
+//   toggleAccordion(document.querySelector('#pet-next-panel'))
+// });
 
 //toggle function//
 function toggleAccordion(element) {
