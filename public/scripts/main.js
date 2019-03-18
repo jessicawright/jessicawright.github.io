@@ -34,21 +34,21 @@ function showImg(n) {
 
 function showContent(n) {
   var i;
-  var images = document.getElementsByClassName("carousel__image");
+  var text = document.getElementsByClassName("carousel__content");
 
-  if (n > images.length) {
-    image = 1
+  if (n > text.length) {
+    text = 1
   }
 
   if (n < 1) {
-    image = images.length
+    text = text.length
   }
 
-  for (i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
+  for (i = 0; i < text.length; i++) {
+    text[i].style.display = "none";
   }
 
-  images[image - 1].style.display = "block";
+  text[text - 1].style.display = "block";
 }
 
 //tech modal//
