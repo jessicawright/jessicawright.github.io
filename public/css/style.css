@@ -38,11 +38,11 @@ a {
 
 .about__left p {
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #fdf9f1;
     margin-left: 3rem;
     margin-top: 1.5rem;
-    margin-right: 10rem;
+    margin-right: 5rem;
     letter-spacing: 3px;
 }
 
@@ -52,7 +52,7 @@ a {
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     background-color: #0d1d35;
-    /* background-image: url(../images/profile\ pic\ for\ editing\ cropped.jpg); */
+    background-image: url(../images/profile\ pic\ for\ editing\ cropped.jpg);
     min-height: 800px;
     /* width: 100%; */
     position: relative;
@@ -633,6 +633,10 @@ li {
 
 .nightsky {
     z-index: -10;
+}
+
+.nightsky__text {
+    z-index: 20;
 }
 
 .previous {
