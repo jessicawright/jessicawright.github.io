@@ -1,7 +1,7 @@
 //carousel//
 
 var image = 1;
-showImg(image);
+currentImg(image);
 
 function currentImg(n) {
   showImg(image += n);
@@ -10,17 +10,46 @@ function currentImg(n) {
 function showImg(n) {
   var i;
   var images = document.getElementsByClassName("carousel__image");
-
+  
   if (n > images.length) {
     image = 1
   }
+  
   if (n < 1) {
     image = images.length
   }
+  
   for (i = 0; i < images.length; i++) {
     images[i].style.display = "none";
   }
+  
   images[image - 1].style.display = "block";
+}
+
+var text = 1;
+currentText(text);
+
+function currentText(n) {
+  showContent(text += n);
+}
+
+function showContent(n) {
+  var i;
+  var texts = document.getElementsByClassName("carousel__content");
+  
+  if (n > texts.length) {
+    text = 1
+  }
+  
+  if (n < 1) {
+    text = texts.length
+  }
+  
+  for (i = 0; i < text.length; i++) {
+    texts[i].style.display = "none";
+  }
+
+  texts[text - 1].style.display = "block";
 }
 
 //tech modal//
