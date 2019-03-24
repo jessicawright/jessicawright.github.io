@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    background-color: #0d1d35;
+    background-color: black;
 }
 
 html {
@@ -33,7 +33,7 @@ h6 {
 
 .header {
     background-image: url(../images/header\ image\ -\ night\ sky.jpg);
-    height: 120vh;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -43,9 +43,24 @@ li {
     list-style: none;
 }
 
+.nav__caption {
+    background-color: hotpink;
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    left: 0;
+    width: auto;
+}
+
+
 .nav__desc {
     color: white;
     font-family: 'Roboto', sans-serif;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    font-size: 30px;
+    line-height: .8;
+    padding-left: .5rem;
 }
 
 .nav__hidden {
@@ -73,8 +88,19 @@ li {
 
 .nav__name {
     color: white;
-    font-size: 32px;
+    font-size: 48px;
     text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    line-height: .9;
+    align-content: center;
+    padding-left: .5rem;
+}
+
+#nav__plus {
+    background-color: hotpink;
+    color: white;
+    padding: 4px;
 }
 
 .show {
@@ -88,5 +114,13 @@ li {
     align-items: center;
     position: relative;
     
+}
+
+.nav--mobile li:first-child {
+    margin-left: .5rem;
+}
+
+.nav--mobile li:last-child {
+    margin-right: 1rem;
 }
 
