@@ -18,9 +18,6 @@
         <!-- Mobile nav starts here -->
         <nav>
             <ul class="nav--mobile">
-                <div nav--logo>
-                    <li><img src="./public/images/rocket.png"></li>
-                </div>
                 <li><button><i class="fas fa-plus fa-2x" id="nav__plus"></i></button></li>
             </ul>
             <ul class="nav__hidden">
@@ -59,29 +56,33 @@
 
     <div class="container">
         <!--About Section-->
-        <section id="about">
-            <h2>Hello! I'm Jessica Wright.</h2>
-            <h3>Call me an idealist - I am a changemaker armed with a laptop.</h3>
-            <p>I've experienced a decade of non profit success, strengthening
-                relationships
-                between organizations and community stakeholders, volunteers and donors. Once I realized that
-                being a
-                software developer meant
-                that I could infinitely increase my impact, I jumped into coding and haven't looked back. I am
-                looking to challenge the status-quo with
-                a cool
-                team while building products that improve lives.</p>
-            <button id="modal__tech--button">MY TECH STACK</button>
-            <!-- Tech Stack Modal content -->
-            <span>Close</span>
-            <p class="modal__tech--content">Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 •
-                Flexbox • Grid • TDD • Agile
-                (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
-                SQL •
-                Relational Databases • Source Control / Git</p>
-            <img src="" alt="my image" />
-        </section>
-
+        <div class="about">
+            <section id="about" class="about__content">
+                <h2>Hello! I'm Jessica Wright.</h2>
+                <h3>Call me an idealist - I am a changemaker armed with a laptop.</h3>
+                <p>I've experienced a decade of non profit success, strengthening
+                    relationships
+                    between organizations and community stakeholders, volunteers and donors. Once I realized that
+                    being a
+                    software developer meant
+                    that I could infinitely increase my impact, I jumped into coding and haven't looked back. I am
+                    looking to challenge the status-quo with
+                    a cool
+                    team while building products that improve lives.</p>
+                <button id="modal__tech--button">MY TECH STACK</button>
+                <!-- Tech Stack Modal content -->
+                <span>Close</span>
+                <p class="modal__tech--content">Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 •
+                    Flexbox • Grid • TDD • Agile
+                    (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
+                    SQL •
+                    Relational Databases • Source Control / Git</p>
+                <img src="" alt="my image" />
+            </section>
+            <section class="about__image">
+                <img src="./public/images/profile pic for editing.jpg" />
+            </section>
+        </div>
 
         <!--Portfolio Section-->
         <section id="projects">
