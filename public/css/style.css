@@ -17,6 +17,12 @@ a {
 .about__content {
     grid-row-start: 1 /span 1;
     background-color: #B3AEDB;
+    text-align: center;
+}
+
+.about__greeting {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .about__image {
@@ -28,6 +34,16 @@ a {
 .about__image img {
     max-width: 100%;
     max-height: auto;
+}
+
+.about__intro {
+    margin-bottom: 20px;
+}
+
+.about__text {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 body {
@@ -68,27 +84,42 @@ li {
     list-style: none;
 }
 
+#modal__tech--button {
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#modal__tech--button:hover {
+    cursor: pointer;
+}
+
 .modal__tech--content {
     display: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
 }
 
 .nav__caption {
     background-color: #B3AEDB;
-    font-size: 18px;
+    font-size: 14px;
     color: black;
     position: absolute;
     left: 0;
     width: auto;
+    padding: 5px;
 }
-
 
 .nav__desc {
     color: white;
     font-family: 'Roboto', sans-serif;
     padding-right: 2rem;
     padding-bottom: 2rem;
-    font-size: 38px;
-    line-height: .8;
+    font-size: 30px;
+    line-height: .9;
     padding-left: .5rem;
 }
 
