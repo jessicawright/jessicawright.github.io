@@ -54,16 +54,16 @@
 
 // //tech modal//
 
-// const openModal = document.querySelector('.modal__tech--button');
+const openModal = document.querySelector('.modal__tech--button');
 // const closeModal = document.querySelector('#modal__tech--close');
 
-// openModal.addEventListener('click', () => {
-//   toggleShowTech(document.querySelector('.modal__tech'))
-// });
+openModal.addEventListener('click', () => {
+  toggleShowTech(document.querySelector('.modal__tech--content'))
+});
 
-// function toggleShowTech(element) {
-//   element.classList.toggle('show__tech__modal');
-// }
+function toggleShowTech(element) {
+  element.classList.toggle('show');
+}
 
 // closeModal.addEventListener('click', () => {
 //   toggleShowTech(document.querySelector('.modal__tech'))
