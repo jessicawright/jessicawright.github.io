@@ -7,177 +7,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jessica Wright</title>
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Roboto" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <header class="logo"><img src="./public/images/logo.png"></header>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jessicabwright/" target="blank">linkedin</a></li>
+            <li>&#8212</li>
+            <li><a href="https://github.com/jessicawright/" target="blank">github</a></li>
+            <li>&#8212</li>
+            <li><a href="https://twitter.com/Jessicaburnettw/" target="blank">twitter</a></li>
+        </ul>
+    </nav>
+    
+    <section class="home">
+        <img src="./public/images/Jessica Wright.jpg" alt="my picture">
+        <h1>Jessica Wright</h1>
+        <h2>Developer in Columbus, OH</h2>
+    </section>
 
-        <!-- Mobile nav starts here -->
-        <nav>
-            <ul class="nav--mobile">
-                <li><button><i class="fas fa-plus fa-2x" id="nav__plus"></i></button></li>
-            </ul>
-            <ul class="nav__hidden">
-                <a href="#projects" class="nav__hidden--row">
-                    <li>PROJECTS</li>
-                </a>
-                <a href="#contact" class="nav__hidden--row">
-                    <li>CONTACT</li>
-                </a>
-                <a href="#about" class="nav__hidden--row">
-                    <li>ABOUT</li>
-                </a>
-                <a href="#blog" class="nav__hidden--row">
-                    <li>BLOG</li>
-                </a>
-            </ul>
-        </nav>
+    <section class="about">
+        <h1><a href="./about.html">about.</a></h1>
+        <h2>I'm Jessica, a full-stack developer in Columbus, OH.</h2>
+        <h3>Call me an idealist - I am a changemaker armed with a laptop.</h3>
+        <p>I've experienced a decade of non profit success, strengthening relationships between organizations and 
+            community stakeholders, volunteers and donors. Once I realized that building applications and software
+            with code meant that I could infinitely increase my impact in my community, I jumped into coding and 
+            haven't looked back. I am looking to challenge the status-quo with a cool team while building products
+            that improve lives.</p>
+        </p>(When I'm not trying to change the world, I like to watch low-budget horror and sci-fi movies with a nice 
+        cup of decaf coffee and pretend like I know how to knit in the round.)</p>
+    </section>
+            
+    <section class="tools">
+        <blockquote><p>“The more I live, the more I learn. The more I learn, the more I realize, the less I know.” 
+                ― Michel Legrand</p></blockquote>
+        <h1>my tools.</h1>
+        <h2>A desire to know all. the. things. will keep me busy for a lifetime. In the meantime, here's my current tech stack:</h2>
+        <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile
+            (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
+            SQL •  Relational Databases • Source Control / Git</p>
+    </section>
 
-        <!-- large nav starts here -->
-        <!-- <nav>
-            <ul>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><img src="./public/images/rocket.png"></li>
-                <li class="nav__contact"><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav> -->
-
-        <div class="wrapper">
-            <h1 class="nav__name">JESSICA WRIGHT</h1>
-            <p class="nav__desc">Cat mom and sci-fi addict who loves crafting and design. I'm stoked thinking about all
-                of the things I
-                don't know. Yet.</p>
-            <h2 class="nav__caption">FULL-STACK DEVELOPER</h2>
-                
+    <section class="projects">
+        <h1>pitch for good.</h1>
+        <div>
+            
         </div>
-    </header>
+        <h1>fake music.</h1>
+        <h1>bloody popcorn.</h1>
+        <h1>cbus parks.</h1>
+        <h1>nightmare hospital.</h1>
+    </section>       
 
-    <div class="container">
-        <!--About Section-->
-        <div class="about">
-            <section id="about" class="about__content">
-                <h2 class="about__greeting">Hello! I'm Jessica Wright.</h2>
-                <h3 class="about__intro">Call me an idealist - I am a changemaker armed with a laptop.</h3>
-                <p class="about__text">I've experienced a decade of non profit success, strengthening
-                    relationships
-                    between organizations and community stakeholders, volunteers and donors. Once I realized that
-                    being a
-                    software developer meant
-                    that I could infinitely increase my impact, I jumped into coding and haven't looked back. I am
-                    looking to challenge the status-quo with
-                    a cool
-                    team while building products that improve lives.</p>
-                <button id="modal__tech--button">MY TECH STACK</button>
-                <!-- Tech Stack Modal content -->
-                <div class="modal__tech--content">
-                <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 •
-                    Flexbox • Grid • TDD • Agile
-                    (Scrum) • Object Oriented Programming • AJAX • JSON • Restful APIs • Responsive Design / Mobile •
-                    SQL •
-                    Relational Databases • Source Control / Git</p>
-            </div>
-            </section>
-            <section class="about__image">
-                <img src="./public/images/profile pic for editing.jpg" />
-            </section>
-        </div>
+    <section class="email">
+        <h2>You wanna work on a project!?!? Me too!</h2>
+        <p>Let's chat!</p>
+        <a href="mailto:wright.983@gmail.com"><i class="far fa-paper-plane fa-md"></i>SEND A MESSAGE</a>
+    </section>
 
-        <!--Portfolio Section-->
-        <section id="projects">
-            <h2>Recent Work</h2>
-            <article class="portfolio__block1">
-                <img src="" alt="">
-                <h3>NIGHTMARE HOSPITAL</h3>
-                <!-- Modal 3 content -->
-                <span>Close</span>
-                <h1>Nightmare Hopsital is a Java console game created over the course
-                    of a weekend.
-                    <img src="" alt="image1" />
-                    <img src="" alt="image2" />
-                    <img src="" alt="image3" />
-                    <a href="https://github.com/jessicawright/VirtualPet">Check it out on GitHub!</a>
-            </article>
-            <article class="portfolio__block2">
-                <img src="" alt="">
-                <h3>PORTFOLIO</h3>
-                <!-- Modal 2 content -->
-                <span>Close</span>
-                <h1>This portfolio is meant to display all of my full-stack projects.
-                    <img src="" alt="image1" />
-                    <img src="" alt="image2" />
-                    <img src="" alt="image3" />
-                    <a href="https://github.com/jessicawright/VirtualPet">Check it out on GitHub!</a>
-            </article>
-            <article class="portfolio__block3">
-                <img src="" alt="">
-                <h3>VIRTUAL PET</h3>
-                <!-- Modal 3 content -->
-                <span>Close</span>
-                <h1>Virtual Pet is a tamagotchi-like Java console application. You must
-                    bath, feed and play with your pets to keep their health levels up.</h1>
-                <img src="" alt="image1" />
-                <img src="" alt="image2" />
-                <img src="" alt="image3" />
-                <a href="https://github.com/jessicawright/VirtualPet">Check it out on GitHub!</a>
-            </article>
-        </section>
+    <footer>
+        <p>© 2019 <a href="mailto:wright.983@gmail.com">Jessica Wright</a></p>
+    </footer>
 
-
-        <!--Follow Section-->
-        <section id="follow">
-            <h2>Follow Me</h2>
-            <ul>
-                <div class="follow--twitter">
-                    <li><a href="https://twitter.com/Jessicaburnettw"><i class="fab fa-twitter-square fa-2x"></i>
-                    </li>
-                    <p>twitter</p></a>
-                </div>
-                <div class="follow--github">
-                    <li><a href="https://github.com/jessicawright"><i class="fab fa-github-square fa-2x"></i></li>
-                    <p>github</p></a>
-                </div>
-                <div class="follow--linkedin">
-                    <li><a href="https://www.linkedin.com/in/jessicabwright/"><i class="fab fa-linkedin fa-2x"></i>
-                    </li>
-                    <p>linkedIn</p></a>
-                </div>
-            </ul>
-        </section>
-
-        <section id=tech-stack>
-            <h2>My Tech Stack</h2>
-            <p><span>Java</span> • <span>Spring</span> • Hibernate • JPA • <span>JavaScript</span> • MVC •
-                <span>HTML5</span> • <span>CSS3</span> • <span>TDD</span> • <span>Object Oriented Programming</span>
-                • AJAX • JSON • Flexbox
-                • Grid • Restful APIs • Responsive Design
-                / Mobile • SQL • Relational Databases • <span>Source Control / Git</span> • <span>Agile
-                    (Scrum)</span> </p>
-        </section>
-
-
-        <!--Contact Section-->
-        <section id="contact">
-            <div>
-                <h2>LET'S MAKE SOMETHING TOGETHER!</h2>
-                <p>If you like what you see and have a project or position in mind, I'd love to chat!
-                    (Maybe over coffee?)</p>
-                <a href="mailto:wright.983@gmail.com"><i class="far fa-paper-plane fa-md"></i>SEND A MESSAGE</a>
-            </div>
-        </section>
-
-        <!--Footer-->
-        <footer>
-            <p>This site was made using Visual Studio Code and Gimp. Icons are by <a
-                    href="https://fontawesome.com/">Font
-                    Awesome</a>. Photo by Ryan Hutton on <a href="https://unsplash.com">Unsplash</a></p>
-            <p>© 2019 <a href="mailto:wright.983@gmail.com">Jessica Wright</a> Made in the USA</p>
-        </footer>
-
-        <script src="./public/scripts/main.js"></script>
-    </div>
+    <script src="./public/scripts/main.js"></script>
 </body>
 
 </html>
